@@ -1,6 +1,7 @@
 from functions import add_person, show_people, search_person, delete_person, update_person
 import time
 
+
 def main():
     while True:
         print("\n---menu---")
@@ -33,5 +34,6 @@ def main():
         elif choice == "6":
             print("Goodbye!")
             break
+
 
 main()
