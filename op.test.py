@@ -16,30 +16,29 @@ class Person:
             "age": self.age,
             "city": self.city
         }
-
+    
 class PeopleManager:
     def __init__(self):
         self.people=[]
 
     def add_person(self, person):
         self.people.append(person)
-        print("Added successfully!💕✅")
     
     def show_people(self):
-        print("\n---ALL USERS---")
+        print("\n--ALL USERS---")
         if not self.people:
-            print("No user yet")
+            print("no user yet")
             return
-        for person in self.people:
+        for person in self.people: 
             person.introduce()
     
     def search_person(self, name):
-        print(f"Search name: {name}")
+        print(f"search name: {name}")
         for person in self.people:
             if person.name==name:
                 person.introduce()
                 return
-        print("User not found!")
+        print("user not found!")
     
     def delete_person(self, name):
         print(f"delete name: {name}")
@@ -48,20 +47,18 @@ class PeopleManager:
                 self.people.remove(person)
                 print("deleted successfully")
                 return
-        print("User not found")
+        print("user not found")
     
-  
     def count_by_city(self, city):
-        count = 0
+        count=0
         for person in self.people:
-            if person.city == city:
-                count += 1
+            if person.city==city:
+                count+=1
+        if count>0:
+            print(f"city count is {count}")
+            return
+        print("no city yet")
 
-        if count > 0:
-          print(f"city count is {count}")
-        else:
-           print("No users in this city")
-    
     def update_person(self, name):
         for person in self.people:
             if person.name==name:
@@ -73,7 +70,7 @@ class PeopleManager:
                 person.city=new_city
                 print("updated successfully")
                 return
-        print("user not found")
+    print("user not found")
 
 
     def save_to_file(self):

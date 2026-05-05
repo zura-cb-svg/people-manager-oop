@@ -1,28 +1,30 @@
 # People Manager CLI App
 
-Simple command-line application to manage people.
+This is a simple command-line application to manage people.
 
 ## Features
 
 * Add person
-* Show all people
-* Search person by name
+* Show people
+* Search person
 * Delete person
+* Update person
 * Count people by city
-* Save data to JSON file
-* Load data from JSON file
 
-## How it works
+## Data Storage
 
-The app stores data in a list while running and saves it to a JSON file so the data is not lost after closing the program.
+Data is saved in a JSON file so it is not lost after closing the program.
 
 ## Technologies
 
 * Python
+* OOP
 * JSON
-* OOP (Object-Oriented Programming)
 
-## Author
+## How to run
 
+Run the file and use the menu:
+python main.py
+## Author:
 Zura
  
